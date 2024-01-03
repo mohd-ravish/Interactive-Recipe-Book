@@ -96,6 +96,7 @@ body {
 }
 
 .note {
+	background-color: #e4e4e4;
 	font-family: 'Montserrat', sans-serif;
 	box-shadow: 0 2px 5px #ccc;
 	border-radius: 10px;
@@ -140,7 +141,7 @@ body {
 }
 
 .note-footer button:hover {
-	background: #ebebeb;
+	background: #c6c6c6;
 }
 
 .delete-icon {
@@ -149,15 +150,14 @@ body {
 
 /* ADD NOTE  */
 .addNote {
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.6);
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* background-color: rgba(0, 0, 0, 0.6); */
+	padding: 20px;
+	border-radius: 5px;
+	z-index: 999; 
 }
 
 .inputArea {
@@ -194,9 +194,6 @@ body {
 
 .inputArea button {
 	font-size: 28px;
-	/* position: absolute; */
-	/* right: 18px; */
-	/* bottom: -18px; */
 	background: #717171;
 	color: #fff;
 	border: none;
@@ -250,17 +247,15 @@ body {
 }
 
 /* View Container */
-
 .viewContainer {
-	position: absolute;
-	/* background-color: rgba(0, 0, 0, 0.4); */
-	left: 0;
-	right: 0;
-	bottom: 50%;
+	position: fixed;
 	top: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* background-color: rgba(0, 0, 0, 0.6); */
+	padding: 20px;
+	border-radius: 5px;
+	z-index: 999;
 }
 
 .card {

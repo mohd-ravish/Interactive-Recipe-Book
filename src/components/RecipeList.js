@@ -6,11 +6,7 @@ import { useState } from 'react';
 import img from "./img/Dal-Makhani.jpg";
 
 const RecipeList = ({ addSection, setAddSection, notes, addNote, deleteNote }) => {
-
-	const style = {
-		backgroundColor: notes.color,
-	};
-
+	
 	const [data, setData] = useState({
 		id: "",
 		title: "",
@@ -44,7 +40,7 @@ const RecipeList = ({ addSection, setAddSection, notes, addNote, deleteNote }) =
 			)}
 			<div className='notes-list'>
 				{notes.map((note) => (
-					<div style={style} className='note'>
+					<div className='note'>
 						<img
 							src={img}
 							alt="img"

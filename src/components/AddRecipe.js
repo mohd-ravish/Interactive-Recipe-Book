@@ -25,7 +25,7 @@ const AddNote = ({ setAddSection, addNote }) => {
 	};
 
 	const handleSaveClick = () => {
-		if (noteTitle.trim().length > 0) {
+		if (noteTitle.trim().length > 0 && noteContent.trim().length > 0 && noteIngredients.trim().length > 0 && noteInstructions.trim().length > 0) {
 			addNote(noteTitle, noteContent, noteIngredients, noteInstructions);
 			setNoteContent('');
 			setNoteTitle('');

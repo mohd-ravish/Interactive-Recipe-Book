@@ -4,8 +4,6 @@ import { IoMdAdd } from "react-icons/io";
 import { MdSearch } from 'react-icons/md';
 
 const Header = ({ setAddSection, handleToggleDarkMode, handleSearchNote }) => {
-
-
 	const add = () => {
 		setAddSection(true)
 	  }
