@@ -2,10 +2,7 @@ import { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
 import RecipeList from './components/RecipeList';
 import Header from './components/Header';
-import img1 from "./img/Dal-Makhani.jpg";
-import img2 from "./img/Biryani.jpg";
-import img3 from "./img/Dosa.jpg";
-import img4 from "./img/chana-masala.jpg"
+import img from "./img/Dal-Makhani.jpg";
 
 const App = () => {
 
@@ -14,7 +11,7 @@ const App = () => {
 	const [notes, setNotes] = useState([
 		{
 			id: nanoid(),
-			image: { img1 },
+			image: { img },
 			title: 'Dal Makhani',
 			content: 'Creamy, spiced lentils simmered in buttery tomato goodness, a classic indulgence',
 			ingredients: 'Black lentils (urad dal) - 1 cup, Red kidney beans (rajma) - 1/4 cup, Ghee (clarified butter) - 2 tablespoons, Onion, finely chopped - 1 large, Tomato, pureed - 1 cup, Ginger-garlic paste - 1 tablespoon, Green chili, chopped - 1 or to taste, Red chili powder - 1 teaspoon, Turmeric powder - 1/2 teaspoo, Garam masala - 1 teaspoon, Cumin powder - 1 teaspoon, Coriander powder - 1 teaspoon, Cream - 1/4 cup, Salt - to taste, Water - as needed, Fresh coriander leaves, chopped - for garnish',
@@ -22,7 +19,7 @@ const App = () => {
 		},
 		{
 			id: nanoid(),
-			image: { img2 },
+			image: { img },
 			title: 'Biryani',
 			content: 'Savor aromatic rice dish, layered with spices, meats, and fragrant herbs',
 			ingredients: 'Ingredients for Biryani, Basmati Rice, Chicken or Meat, Onions, Tomatoes, Yogurt, Cooking Oil or Ghee, Biryani Masala, Ginger-Garlic Paste, Mint and Coriander Leaves, Whole Spices (Cinnamon, Cardamom, Cloves), Saffron or Food Color (optional), Fried Onions (for garnish), Lemon Juice, Salt',
@@ -30,7 +27,7 @@ const App = () => {
 		},
 		{
 			id: nanoid(),
-			image: { img3 },
+			image: { img},
 			title: 'Masala Dosa',
 			content: 'Savory South Indian crepe made from fermented rice and lentil batter',
 			ingredients: '2 cups (fermented), 3 boiled and mashed potatoes, 1 tablespoon oil, 1 teaspoon mustard seeds, 1 teaspoon urad dal, 1 onion, chopped, 2 green chilies, chopped, 1/2 teaspoon turmeric powder, Salt to taste, Chopped coriander leaves, 1 cup grated coconut, 2 green chilies, 1/2-inch ginger, Salt to taste, Water for grinding, 1/2 cup toor dal, Mixed vegetables, 2 tablespoons sambar powder, Tamarind pulp, Salt to taste, Tempering: mustard seeds, urad dal, curry leaves, For cooking dosa, Tomatoes, onions, green chilies, garlic, and salt',
@@ -38,7 +35,7 @@ const App = () => {
 		},
 		{
 			id: nanoid(),
-			image: { img4 },
+			image: { img },
 			title: 'Chana Masala',
 			content: 'Spicy, aromatic chickpea curry with rich tomato-based sauce and vibrant spices',
 			ingredients: 'Chickpeas (Chana), 2 cups dried chickpeas or 2 cans (15 oz each) of cooked chickpeas, 1 large onion, finely chopped, Tomatoes , 2 medium-sized tomatoes, finely chopped or pureed, Ginger-Garlic Paste, 1 tablespoon ginger-garlic paste, Cooking Oil, tablespoons cooking oil ,1 teaspoon cumin seeds - 1 teaspoon coriander powder - 1/2 teaspoon turmeric powder - 1/2 teaspoon red chili powder (adjust according to your spice preference) - 1 teaspoon garam masala To taste Fresh Coriander Leaves Chopped for garnish ,1 tablespoon (optional, for a hint of citrus flavor) ,As needed for cooking and achieving desired consistency Optional Additions, 2-3, finely chopped (for extra heat) - **Kasuri Methi (Dried Fenugreek Leaves):** - 1 teaspoon, crushed (for enhanced flavor) , 1 tablespoon (for a richer tomato taste) Note: Adjust the spice levels, salt, and additional ingredients according to your taste preferences.',
