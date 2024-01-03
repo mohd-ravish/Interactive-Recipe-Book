@@ -30,6 +30,8 @@ const App = () => {
 			image: { img2 },
 			title: 'Biryani',
 			content: 'Savor aromatic rice dish, layered with spices, meats, and fragrant herbs',
+			ingredients: 'Ingredients for Biryani, Basmati Rice, Chicken or Meat, Onions, Tomatoes, Yogurt, Cooking Oil or Ghee, Biryani Masala, Ginger-Garlic Paste, Mint and Coriander Leaves, Whole Spices (Cinnamon, Cardamom, Cloves), Saffron or Food Color (optional), Fried Onions (for garnish), Lemon Juice, Salt',
+			instructions: 'Marinate chicken or mutton with yogurt, spices, and ginger-garlic paste. Set aside for 30 minutes., In a pot, heat oil. Add whole spices, sliced onions, and cook until golden brown., Add marinated meat, cook until it changes color. Add tomatoes and cook until oil separates., Parboil basmati rice. Layer half over the meat. Sprinkle saffron-infused milk., Add remaining rice, fried onions, chopped mint, and coriander leaves., Seal pot with foil or dough. Cook on low heat for 20-30 mins for flavors to meld., Gently mix and serve aromatic biryani with raita.',
 			color: getRandomColor()
 		},
 		{
@@ -37,34 +39,8 @@ const App = () => {
 			image: { img3 },
 			title: 'Masala Dosa',
 			content: 'Savory South Indian crepe made from fermented rice and lentil batter',
-			color: getRandomColor()
-		},
-		{
-			id: nanoid(),
-			image: { img1 },
-			title: 'Chicken Korma',
-			content: 'Creamy, aromatic, and tender chicken in a rich, spiced yogurt sauce.',
-			color: getRandomColor()
-		},
-		{
-			id: nanoid(),
-			image: { img1 },
-			title: 'Madras Curry',
-			content: 'Spicy and aromatic chicken curry with bold Madras flavors',
-			color: getRandomColor()
-		},
-		{
-			id: nanoid(),
-			image: { img1 },
-			title: 'Vada pav',
-			content: 'Spicy potato fritter in a bun, an iconic Mumbai street food',
-			color: getRandomColor()
-		},
-		{
-			id: nanoid(),
-			image: { img1 },
-			title: 'Gulab Jamun',
-			content: 'Delicious, deep-fried dough balls soaked in sweet, aromatic sugar syrup',
+			ingredients: '2 cups (fermented), 3 boiled and mashed potatoes, 1 tablespoon oil, 1 teaspoon mustard seeds, 1 teaspoon urad dal, 1 onion, chopped, 2 green chilies, chopped, 1/2 teaspoon turmeric powder, Salt to taste, Chopped coriander leaves, 1 cup grated coconut, 2 green chilies, 1/2-inch ginger, Salt to taste, Water for grinding, 1/2 cup toor dal, Mixed vegetables, 2 tablespoons sambar powder, Tamarind pulp, Salt to taste, Tempering: mustard seeds, urad dal, curry leaves, For cooking dosa, Tomatoes, onions, green chilies, garlic, and salt',
+			instructions: 'Soak and grind urad dal and rice to make a smooth batter. Ferment overnight., Boil and mash potatoes. Sauté mustard seeds, curry leaves, onions, and spices. Mix with potatoes., Heat a dosa griddle. Pour a ladle of batter, spread thin, and cook until golden., Spread a thin layer of coconut chutney on the dosa., Place a portion of the potato filling on one side of the dosa., Fold the dosa over the filling. Serve hot with sambar and coconut chutney.',
 			color: getRandomColor()
 		},
 		{
@@ -76,6 +52,34 @@ const App = () => {
 			instructions: 'Soak and cook 2 cups dried chickpeas or use 2 cans of cooked chickpeas, In a pan, heat 2 tbsp oil, add 1 tsp cumin seeds, and sauté 1 finely chopped onion until golden, Stir in 1 tbsp ginger-garlic paste, then add 1 tsp each of coriander, turmeric, and red chili powder, and 1 tsp garam masala, Add 2 chopped or pureed tomatoes. Cook until oil separates, Mix in cooked chickpeas. Add salt. Cook for 10-15 mins, Add water as needed for desired thickness, Optionally, add 1 tbsp lemon juice, chopped green chilies, and 1 tsp crushed kasuri methi. Garnish with fresh coriander, Enjoy Chana Masala with rice or naan.',
 			color: getRandomColor()
 		},
+		// {
+		// 	id: nanoid(),
+		// 	image: { img1 },
+		// 	title: 'Chicken Korma',
+		// 	content: 'Creamy, aromatic, and tender chicken in a rich, spiced yogurt sauce.',
+		// 	color: getRandomColor()
+		// },
+		// {
+		// 	id: nanoid(),
+		// 	image: { img1 },
+		// 	title: 'Madras Curry',
+		// 	content: 'Spicy and aromatic chicken curry with bold Madras flavors',
+		// 	color: getRandomColor()
+		// },
+		// {
+		// 	id: nanoid(),
+		// 	image: { img1 },
+		// 	title: 'Vada pav',
+		// 	content: 'Spicy potato fritter in a bun, an iconic Mumbai street food',
+		// 	color: getRandomColor()
+		// },
+		// {
+		// 	id: nanoid(),
+		// 	image: { img1 },
+		// 	title: 'Gulab Jamun',
+		// 	content: 'Delicious, deep-fried dough balls soaked in sweet, aromatic sugar syrup',
+		// 	color: getRandomColor()
+		// },
 	]);
 
 	const [searchText, setSearchText] = useState('');
