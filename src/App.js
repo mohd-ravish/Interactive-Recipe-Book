@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
 import RecipeList from './components/RecipeList';
 import Header from './components/Header';
-import img from "./img/Dal-Makhani.jpg";
+import img from "./components/img/Dal-Makhani.jpg";
 
 const App = () => {
 

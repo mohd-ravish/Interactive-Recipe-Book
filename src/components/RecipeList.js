@@ -6,7 +6,7 @@ import { useState } from 'react';
 import img from "./img/Dal-Makhani.jpg";
 
 const RecipeList = ({ addSection, setAddSection, notes, addNote, deleteNote }) => {
-	
+
 	const [data, setData] = useState({
 		id: "",
 		title: "",
